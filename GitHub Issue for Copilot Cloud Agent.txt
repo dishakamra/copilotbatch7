@@ -1,0 +1,58 @@
+Create a GitHub Issue for Copilot Cloud Agent
+
+Step 1: Go to the Repository
+
+Open the repository on GitHub.
+
+Go to:Issues > New issue
+
+Step 2: Create the Issue
+
+Issue title:Add GET /products/:id endpoint
+
+Issue body:
+## Goal
+
+Add a new endpoint to retrieve a single product by ID.
+
+## Requirements
+
+- Add a service method named `getProductById`.
+- Add a route for `GET /products/:id`.
+- If the product exists, return HTTP 200 with the product.
+- If the product does not exist, return HTTP 404 with a JSON error message.
+- Add integration tests for:
+  - existing product ID
+  - missing product ID
+- Update README with the new endpoint.
+
+## Constraints
+
+- Do not change the behavior of `GET /products`.
+- Follow the existing project structure.
+- Keep route logic simple.
+- Put product lookup logic in the service layer.
+- Do not introduce new dependencies unless necessary.
+
+## Acceptance Criteria
+
+- `GET /products/p1` returns HTTP 200.
+- `GET /products/unknown` returns HTTP 404.
+- Existing tests continue to pass.
+- New tests are added.
+- README is updated.
+
+Assign the Issue to Copilot
+=============================
+Step 1: Open the Issue
+
+Open the issue you just created.
+
+Step 2: Find the Assignees Section
+
+On the right side of the issue, find:
+
+Assignees
+Step 3: Assign to Copilot
+
+Click: Assignees > Copilot
